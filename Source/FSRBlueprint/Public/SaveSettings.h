@@ -11,7 +11,7 @@
 #include "SaveSettings.generated.h"
 
 UCLASS()
-class FSR3_BLUEPRINT_CONTROL_API USaveSettings : public UBlueprintFunctionLibrary
+class FSRBLUEPRINT_API USaveSettings : public UBlueprintFunctionLibrary
 {
     GENERATED_BODY()
 

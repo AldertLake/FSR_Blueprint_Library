@@ -1,25 +1,32 @@
 {
-    "FileVersion": 3,
-    "Version": 1,
-    "VersionName": "3.1.4",
-    "FriendlyName": "FSR3 Blueprint Control",
-    "Description": "Easily control and customize AMD FSR 3 settings at runtime using intuitive Blueprint nodes, giving you full control over upscaling quality, frame generation, and other FSR features without writing C++ code.",
-    "Category": "Rendering",
-    "CreatedBy": "AldertLake",
-    "CreatedByURL": "https://ko-fi.com/aldertlake",
-    "DocsURL": "https://github.com/AldertLake/FSR3-Blueprint-Control/blob/main/Documentation/Overview.md",
-    "MarketplaceURL": "",
-    "SupportURL": "https://github.com/AldertLake/FSR3-Blueprint-Control/issues",
-    "EngineVersion": "5.3.0",
-    "CanContainContent": true,
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "4.0.2",
+	"FriendlyName": "AMD FSR 4 Blueprint Control",
+	"Description": "Easily control and customize AMD FSR 4 settings at runtime using intuitive Blueprint nodes, giving you full control over upscaling quality, frame generation, and other FidelityFX Super Resolution 4 features without writing C++ code.",
+	"Category": "Rendering",
+	"CreatedBy": "AldertLake",
+	"CreatedByURL": "https://github.com/AldertLake",
+	"DocsURL": "https://github.com/AldertLake/FSR3-Blueprint-Control/blob/main/Documentation/Overview.md",
+	"MarketplaceURL": "https://www.fab.com/listings/9a896205-c4a5-4ce4-ba96-15d3162bc7bb",
+	"SupportURL": "https://github.com/AldertLake/FSR3-Blueprint-Control/issues",
+	"EngineVersion": "5.3.0",
+	"CanContainContent": true,
 	"FabURL": "com.epicgames.launcher://ue/Fab/product/9a896205-c4a5-4ce4-ba96-15d3162bc7bb",
-    "Installed": true,
-    "Modules": [
-        {
-            "Name": "FSR3_Blueprint_Control",
-            "Type": "Runtime",
-            "LoadingPhase": "PreLoadingScreen",
-            "PlatformAllowList": ["Win64", "Android", "IOS"]
-        }
-    ]
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "FSRBlueprint",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen",
+			"PlatformAllowList": [
+				"Win64",
+				"Android",
+				"IOS"
+			]
+		}
+	],
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Sealed": true
 }

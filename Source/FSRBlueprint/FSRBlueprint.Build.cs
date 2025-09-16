@@ -6,9 +6,9 @@
 
 using UnrealBuildTool;
 
-public class FSR3_Blueprint_Control : ModuleRules
+public class FSRBlueprint : ModuleRules
 {
-    public FSR3_Blueprint_Control(ReadOnlyTargetRules Target) : base(Target)
+    public FSRBlueprint(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
