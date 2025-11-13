@@ -47,7 +47,7 @@ void EditorMessage::ShutdownModule()
 
 void EditorMessage::ShowRatingMessageModal()
 {
-    const FText Title = LOCTEXT("RatingMessageTitle", "FSR4 Blueprint Library 4.0.2");
+    const FText Title = LOCTEXT("RatingMessageTitle", "FSR4 Blueprint Library 4.0.3");
     const FText Message = LOCTEXT("RatingMessageText", 
         "Thank you for using the FSR4 Blueprint Library!\n\n"
         "If you find this plugin helpful, please consider leaving a positive rating. "
