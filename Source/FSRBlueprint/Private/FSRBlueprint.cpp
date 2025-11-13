@@ -11,12 +11,10 @@
 
 void FSRBlueprint::StartupModule()
 {
-    // Code to execute when your module starts up
 }
 
 void FSRBlueprint::ShutdownModule()
 {
-    // Code to execute when your module shuts down
 }
 
 #undef LOCTEXT_NAMESPACE

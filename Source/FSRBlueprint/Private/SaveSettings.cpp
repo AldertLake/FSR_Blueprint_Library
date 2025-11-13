@@ -8,7 +8,7 @@
 #include "Misc/ConfigCacheIni.h"
 #include "Engine/Engine.h"
 
-//Used To Save Many Settings Variables
+
 void USaveSettings::SaveEngineConfigSetting(const FString& Section, const FString& Key, int32 Value)
 {
     if (GConfig)
@@ -51,7 +51,6 @@ void USaveSettings::SaveEngineConfigFloatSetting(const FString& Section, const F
     if (GConfig)
     {
         GConfig->SetFloat(*Section, *Key, Value, GEngineIni);
-        // Flush to disk
         GConfig->Flush(false, GEngineIni);
         if (GEngine)
         {

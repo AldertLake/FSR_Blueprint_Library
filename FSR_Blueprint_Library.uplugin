@@ -24,6 +24,16 @@
 				"Android",
 				"IOS"
 			]
+		},
+				{
+			"Name": "EditorMessage",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [
+				"Win64",
+				"Android",
+				"IOS"
+			]
 		}
 	],
 	"IsBetaVersion": false,
