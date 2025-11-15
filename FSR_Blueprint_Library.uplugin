@@ -30,9 +30,7 @@
 			"Type": "Editor",
 			"LoadingPhase": "PostEngineInit",
 			"PlatformAllowList": [
-				"Win64",
-				"Android",
-				"IOS"
+				"Win64"
 			]
 		}
 	],

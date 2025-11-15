@@ -22,13 +22,13 @@ public class EditorMessage : ModuleRules
         PrivateDependencyModuleNames.AddRange(
             new string[]
             {
-        "Core",
-        "CoreUObject",
-        "Engine",
-        "Slate",      
-        "SlateCore", 
-        "UnrealEd", 
-        "Projects"
+                "Core",
+                "CoreUObject",
+                "Engine",
+                "Slate",
+                "SlateCore",
+                "UnrealEd",
+                "Projects"
             }
         );
     }
