@@ -14,13 +14,5 @@ class EditorMessage : public IModuleInterface
 public:
     virtual void StartupModule() override;
     virtual void ShutdownModule() override;
-
-private:
-
-    void ShowRatingMessageModal();
-    void HandleRateNowClicked();
-    void HandleRemindLaterClicked();
-    void HandleNeverShowClicked();
-    static FString GetConfigFilePath();
-    static FString GetConfigSectionName();
+    static void ShowRatingDialogIfNeeded();
 };
