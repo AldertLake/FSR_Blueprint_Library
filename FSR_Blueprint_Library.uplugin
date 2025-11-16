@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "4.0.3",
+	"VersionName": "4.0.4",
 	"FriendlyName": "FSR4 Blueprint Library",
 	"Description": "Easily control and customize AMD FSR 4 settings at runtime using intuitive Blueprint nodes, giving you full control over upscaling quality, frame generation, and other FidelityFX Super Resolution 4 features without writing C++ code.",
 	"Category": "Rendering",

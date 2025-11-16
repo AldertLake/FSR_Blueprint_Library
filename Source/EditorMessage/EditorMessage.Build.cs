@@ -19,17 +19,10 @@ public class EditorMessage : ModuleRules
             "Engine"
         });
 
-        PrivateDependencyModuleNames.AddRange(
-            new string[]
-            {
-                "Core",
-                "CoreUObject",
-                "Engine",
-                "Slate",
-                "SlateCore",
-                "UnrealEd",
-                "Projects"
-            }
-        );
+        PrivateDependencyModuleNames.AddRange(new string[]
+        {
+            "Slate",
+            "SlateCore"
+        });
     }
 }
