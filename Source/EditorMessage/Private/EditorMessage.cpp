@@ -4,8 +4,13 @@
 // Support:  https://ko-fi.com/aldertlake
 // ---------------------------------------------------
 
+//To reduce junk, You can delete this whole module (EditorOnly). It has only logic for rating
+//MessageBox, delete the EditorOnly folder inside plugin source & remove the module from the .uplugin file.
+//This will not be packaged in your game automaticaly so don't worry about it if you didnt remove it.
+
 #include "EditorMessage.h"
-#if WITH_EDITOR 
+
+#if WITH_EDITOR
 #include "Misc/MessageDialog.h"
 #include "Misc/ConfigCacheIni.h"
 #include "Misc/Paths.h"
@@ -37,7 +42,7 @@ namespace
 		GConfig->GetBool(*Section, *Key, Verified, *IniPath);
 		if (Verified == Value)
 		{
-			return; 
+			return;
 		}
 
 		FString Contents;
@@ -127,6 +132,7 @@ void EditorMessage::ShowRatingDialogIfNeeded()
 #endif
 }
 
+
 void EditorMessage::StartupModule()
 {
 #if WITH_EDITOR
@@ -137,8 +143,5 @@ void EditorMessage::StartupModule()
 void EditorMessage::ShutdownModule()
 {
 }
-
 #undef LOCTEXT_NAMESPACE
-
 IMPLEMENT_MODULE(EditorMessage, EditorMessage)
-
