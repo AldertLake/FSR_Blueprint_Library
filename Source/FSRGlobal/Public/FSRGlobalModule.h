@@ -1,16 +1,18 @@
 // ---------------------------------------------------
 // Copyright (c) 2025 AldertLake. All Rights Reserved.
 // GitHub:   https://github.com/AldertLake/
-// Support:  https://ko-fi.com/aldertlake
+// Discord:  https://discord.gg/QpPPfh6WVn
 // ---------------------------------------------------
 
 #pragma once
 
+#include "CoreMinimal.h"
+#include "Modules/ModuleInterface.h"
 #include "Modules/ModuleManager.h"
 
-class FSRBlueprint : public IModuleInterface
+class FFSRGlobal : public FDefaultModuleImpl
 {
 public:
-    virtual void StartupModule() override;
-    virtual void ShutdownModule() override;
+	virtual void StartupModule() override;
+	virtual void ShutdownModule() override;
 };

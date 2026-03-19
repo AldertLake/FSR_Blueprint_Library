@@ -1,17 +1,14 @@
 // ---------------------------------------------------
 // Copyright (c) 2025 AldertLake. All Rights Reserved.
 // GitHub:   https://github.com/AldertLake/
-// Support:  https://ko-fi.com/aldertlake
+// Discord:  https://discord.gg/QpPPfh6WVn
 // ---------------------------------------------------
 
 using UnrealBuildTool;
-
-public class EditorMessage : ModuleRules
+public class FSREditor : ModuleRules
 {
-    public EditorMessage(ReadOnlyTargetRules Target) : base(Target)
+    public FSREditor(ReadOnlyTargetRules Target) : base(Target)
     {
-        PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-
         PublicDependencyModuleNames.AddRange(new string[]
         {
             "Core",
@@ -22,7 +19,9 @@ public class EditorMessage : ModuleRules
         PrivateDependencyModuleNames.AddRange(new string[]
         {
             "Slate",
-            "SlateCore"
+            "SlateCore",
+            "UnrealEd",
+            "LevelEditor"
         });
     }
 }
