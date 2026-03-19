@@ -1,8 +1,51 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "4.0.4",
-	"FriendlyName": "FSR4 Blueprint Library",
+	"VersionName": "4.0.5",
+	"Modules": [
+		{
+			"Name": "FSRMobile",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen",
+			"PlatformAllowList": [
+				"Android",
+				"IOS"
+			]
+		},
+		{
+			"Name": "FSRDesktop",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen",
+			"PlatformAllowList": [
+				"Win64",
+				"Mac",
+				"Linux"
+			]
+		},
+		{
+			"Name": "FSREditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Mac",
+				"Linux"
+			]
+		},
+		{
+			"Name": "FSRGlobal",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen",
+			"PlatformAllowList": [
+				"Win64",
+				"Mac",
+				"Linux",
+				"Android",
+				"IOS"
+			]
+		}
+	],
+	"FriendlyName": "FSR 4 Blueprint Library",
 	"Description": "Easily control and customize AMD FSR 4 settings at runtime using intuitive Blueprint nodes, giving you full control over upscaling quality, frame generation, and other FidelityFX Super Resolution 4 features without writing C++ code.",
 	"Category": "Rendering",
 	"CreatedBy": "AldertLake",
@@ -10,30 +53,8 @@
 	"DocsURL": "https://aldertlake.gitbook.io/amd-fsr-blueprint-control/",
 	"MarketplaceURL": "https://www.fab.com/listings/9a896205-c4a5-4ce4-ba96-15d3162bc7bb",
 	"SupportURL": "https://github.com/AldertLake/FSR_Blueprint_Library/issues",
-	"EngineVersion": "5.3.0",
-	"CanContainContent": true,
+	"CanContainContent": false,
 	"Installed": true,
-	"Sealed": true,
-	"Modules": [
-		{
-			"Name": "FSRBlueprint",
-			"Type": "Runtime",
-			"LoadingPhase": "PreLoadingScreen",
-			"PlatformAllowList": [
-				"Win64",
-				"Android",
-				"IOS"
-			]
-		},
-		{
-			"Name": "EditorMessage",
-			"Type": "Editor",
-			"LoadingPhase": "PostEngineInit",
-			"PlatformAllowList": [
-				"Win64"
-			]
-		}
-	],
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false
 }
