@@ -29,7 +29,7 @@ void UFSRMobileLibrary::SetFSRMobileSharpness(float Sharpness)
 
 float UFSRMobileLibrary::GetFSRMobileSharpness()
 {
-	return UFSRHelpers::GetCVarFloat(TEXT("r.Mobile.FSR.RCAS.enabled"));
+	return UFSRHelpers::GetCVarFloat(TEXT("r.Mobile.FSR.RCAS.Sharpness"));
 }
 
 void UFSRMobileLibrary::EnableFSRMobileDenoise(bool bEnable)
