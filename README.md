@@ -3,14 +3,14 @@
 
 # AMD FSR Blueprint Library 
 
-The **FSR Blueprint Library** is an Unreal Engine plugin that brings **AMD FidelityFX Super Resolution (FSR)** features directly into Blueprints.  
-It allows developers to easily integrate and control FSR settings without needing custom C++ code, making it simple to optimize performance and scalability for a wide range of hardware.  
+**FSR Blueprint Library** is an Unreal Engine plugin that brings AMD FidelityFX Super Resolution (FSR) controls directly into Blueprints without C++.
+
 
 ### Key Features
 - 🔹 Blueprint-accessible functions for **FSR control**.  
-- 🔹 Support for the latest **FSR 4** (FSR 3 deprecated).  
+- 🔹 Support for the latest **FSR 4** & Legacy FSR Versions (**FSR 2** & **FSR 3**).  
 - 🔹 Utility nodes, including **game restart** and **engine.ini management**.  
-- 🔹 Designed for **UE 5.4+** compatibility.  
+- 🔹 Include full C++ API & Blueprint Usage API.
 
 ### 📚 Documentation
 👉 [View the Documentation](https://aldertlake.gitbook.io/amd-fsr-blueprint-control)  
