@@ -1,13 +1,21 @@
-// ---------------------------------------------------
-// Copyright (c) 2025 AldertLake. All Rights Reserved.
-// GitHub:   https://github.com/AldertLake/
-// Discord:  https://discord.gg/QpPPfh6WVn
-// ---------------------------------------------------
+// -----------------------------------------------------
+// Copyright   (c) 2025 AldertLake. All Rights Reserved.
+// GitHub:     https://github.com/AldertLake/
+// Discord:    https://discord.gg/QpPPfh6WVn
+// -----------------------------------------------------
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "FSRDataTypes.generated.h"
+
+UENUM(BlueprintType)
+enum class EFSRVersionCompatibility : uint8
+{
+	FSR2 = 0 UMETA(DisplayName = "FSR 2"),
+	FSR3 = 1 UMETA(DisplayName = "FSR 3"),
+	FSR4 = 2 UMETA(DisplayName = "FSR 4")
+};
 
 UENUM(BlueprintType)
 enum class EFSRQualityMode : uint8

@@ -19,14 +19,22 @@
 void FFSREditorModule::StartupModule()
 {
 #if WITH_EDITOR
+#if ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 8
+	FCoreDelegates::GetOnPostEngineInit().AddRaw(this, &FFSREditorModule::ShowRatingPrompt);
+#else
 	FCoreDelegates::OnPostEngineInit.AddRaw(this, &FFSREditorModule::ShowRatingPrompt);
+#endif
 #endif
 }
 
 void FFSREditorModule::ShutdownModule()
 {
 #if WITH_EDITOR
+#if ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 8
+	FCoreDelegates::GetOnPostEngineInit().RemoveAll(this);
+#else
 	FCoreDelegates::OnPostEngineInit.RemoveAll(this);
+#endif
 #endif
 }
 
