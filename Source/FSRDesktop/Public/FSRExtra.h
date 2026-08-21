@@ -1,8 +1,8 @@
-// ---------------------------------------------------
-// Copyright (c) 2025 AldertLake. All Rights Reserved.
-// GitHub:   https://github.com/AldertLake/
-// Discord:  https://discord.gg/QpPPfh6WVn
-// ---------------------------------------------------
+// -----------------------------------------------------
+// Copyright   (c) 2025 AldertLake. All Rights Reserved.
+// GitHub:     https://github.com/AldertLake/
+// Discord:    https://discord.gg/QpPPfh6WVn
+// -----------------------------------------------------
 
 #pragma once
 
@@ -18,8 +18,10 @@ class FSRDESKTOP_API UFSRExtra : public UBlueprintFunctionLibrary
 
 public:
 
-	/* Restart your game by creating new process and then closing the existing one.
-	   Note : Work only outisde editor & in descktop platform - used for testing & debug. */
+	/** 
+	 * Restart your game by creating new process and then closing the existing one.
+	 * Note : Works only outside editor & in desktop platform - used for testing & debug. 
+	 */
 	UFUNCTION(BlueprintCallable, Category = "AMD FidelityFX™ Extra")
 	static void RestartGameWithCommandLine(const FString& ExtraCommandLine, bool bOverrideExistingLaunchArgs);
 

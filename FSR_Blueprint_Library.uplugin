@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
-	"Version": 1,
-	"VersionName": "4.0.5",
+	"Version": 5,
+	"VersionName": "4.1.1",
 	"Modules": [
 		{
 			"Name": "FSRMobile",
@@ -45,12 +45,12 @@
 			]
 		}
 	],
-	"FriendlyName": "FSR 4 Blueprint Library",
-	"Description": "Easily control and customize AMD FSR 4 settings at runtime using intuitive Blueprint nodes, giving you full control over upscaling quality, frame generation, and other FidelityFX Super Resolution 4 features without writing C++ code.",
+	"FriendlyName": "FSR Blueprint Library",
+	"Description": "Easily control and customize AMD FSR settings at runtime using intuitive Blueprint nodes, giving you full control over upscaling quality, frame generation, and other FidelityFX Super Resolution features without writing C++ code.",
 	"Category": "Rendering",
 	"CreatedBy": "AldertLake",
 	"CreatedByURL": "https://github.com/AldertLake",
-	"DocsURL": "https://aldertlake.gitbook.io/amd-fsr-blueprint-control/",
+	"DocsURL": "https://aldertlake-docs.vercel.app/docs/fsr",
 	"MarketplaceURL": "https://www.fab.com/listings/9a896205-c4a5-4ce4-ba96-15d3162bc7bb",
 	"SupportURL": "https://github.com/AldertLake/FSR_Blueprint_Library/issues",
 	"CanContainContent": false,
