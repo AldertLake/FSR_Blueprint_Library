@@ -72,3 +72,13 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Agent instructions and research files
+AGENTS.md
+agents.md
+Research/
+research/
+
+# Config folder
+Config/
+config/
